@@ -1,0 +1,41 @@
+{
+  "name": "boat-ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/serve/api.ts",
+    "ingest": "tsx src/cli/ingest.ts",
+    "before": "tsx src/cli/before.ts",
+    "odds:poll": "tsx src/cli/odds_poll.ts",
+    "result": "tsx src/cli/result.ts",
+    "infer": "tsx src/cli/infer.ts",
+    "snapshot": "tsx src/cli/snapshot.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.1",
+    "axios": "^1.7.7",
+    "better-sqlite3": "11.7.0",
+    "cheerio": "^1.0.0",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.4.5",
+    "fastify": "^5.0.0",
+    "p-retry": "^6.2.0",
+    "pino": "^9.4.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "eslint": "^9.14.0",
+    "node-gyp": "^12.0.0",
+    "prettier": "^3.3.3",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
