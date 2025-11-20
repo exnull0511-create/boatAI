@@ -11,7 +11,7 @@
     "result": "tsx src/cli/result.ts",
     "infer": "tsx src/cli/infer.ts",
     "snapshot": "tsx src/cli/snapshot.ts",
-    "test": "vitest run"
+    "test": "vitest run",
   },
   "dependencies": {
     "@fastify/cors": "^10.0.1",
